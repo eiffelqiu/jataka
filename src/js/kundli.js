@@ -40986,19 +40986,12 @@ function onkeydown(e) {
 }
 
 function draw(transit) {
-    var canvas_info = document.getElementById('canvas_info');
 
-
-
-    var myinfo = canvas_info.getContext('2d');
-    canvas_info.onselectstart = function () { return false; }
 
     var canvas_chart = document.getElementById('canvas_chart');
     var mychart = canvas_chart.getContext('2d');
     mychart.clearRect(0, 0, canvas_chart.width, canvas_chart.height);
     canvas_chart.onselectstart = function () { return false; }
-
-
 
     draw_empty_chart(mychart, canvas_chart, 0, 0);
     draw_zodiacs(mychart);
@@ -41007,7 +41000,11 @@ function draw(transit) {
     draw_empty_chart(mychart, canvas_chart, 330, 0);
     draw_division_chart(mychart, mynavamsaz, mynavamsah, '');
 
-    draw_info(myinfo, canvas_info, transit);
+    // var canvas_info = document.getElementById('canvas_info');
+    // var myinfo = canvas_info.getContext('2d');
+    // canvas_info.onselectstart = function () { return false; }    
+
+    // draw_info(myinfo, canvas_info, transit);
 
     // var dasha_info = document.getElementById('dasha_table');
     // var mydashinfo = dasha_info.getContext('2d');
@@ -41343,120 +41340,38 @@ function draw_division_chart(canvas, zodiac, house, d) {
     canvas.fillText("D9 - Navamsa", xoffset, 215);
 }
 $(document).ready(function () {
-    // var data =
-    // {
-    //     title: 'Dasha',
-    //     nodes: [
-    //         {
-    //             title: 'Mars Dasha: 2001-1-15',
-    //             nodes: [
-    //                 { title: 'Sun: 2001-1-15' },
-    //                 { title: 'Moon: 2001-2-9' },
-    //                 { title: 'Mars: 2002-3-9' },
-    //                 { title: 'Rahu: 2004-12-8' },
-    //                 { title: 'Jupiter: 2005-1-9' },
-    //                 { title: 'Saturn: 2006-2-19' },
-    //                 { title: 'Mercury: 2007-5-9' },
-    //                 { title: 'Ketu: 2008-3-23' },
-    //                 { title: 'Venus: 2009-6-5' }
-    //             ]
-    //         },
-    //         {
-    //             title: 'Rahu Dasha: 2010-1-15',
-    //             nodes: [
-    //                 { title: 'Sun: 2001-1-15' },
-    //                 { title: 'Moon: 2001-2-9' },
-    //                 { title: 'Mars: 2002-3-9' },
-    //                 { title: 'Rahu: 2004-12-8' },
-    //                 { title: 'Jupiter: 2005-1-9' },
-    //                 { title: 'Saturn: 2006-2-19' },
-    //                 { title: 'Mercury: 2007-5-9' },
-    //                 { title: 'Ketu: 2008-3-23' },
-    //                 { title: 'Venus: 2009-6-5' }
-    //             ]
-    //         },
-    //         {
-    //             title: 'Jupiter Dasha: 2011-1-15',
-    //             nodes: [
-    //                 { title: 'Sun: 2001-1-15' },
-    //                 { title: 'Moon: 2001-2-9' },
-    //                 { title: 'Mars: 2002-3-9' },
-    //                 { title: 'Rahu: 2004-12-8' },
-    //                 { title: 'Jupiter: 2005-1-9' },
-    //                 { title: 'Saturn: 2006-2-19' },
-    //                 { title: 'Mercury: 2007-5-9' },
-    //                 { title: 'Ketu: 2008-3-23' },
-    //                 { title: 'Venus: 2009-6-5' }
-    //             ]
-    //         },
-    //         {
-    //             title: 'Saturn Dasha: 2012-1-15',
-    //             nodes: [
-    //                 { title: 'Sun: 2001-1-15' },
-    //                 { title: 'Moon: 2001-2-9' },
-    //                 { title: 'Mars: 2002-3-9' },
-    //                 { title: 'Rahu: 2004-12-8' },
-    //                 { title: 'Jupiter: 2005-1-9' },
-    //                 { title: 'Saturn: 2006-2-19' },
-    //                 { title: 'Mercury: 2007-5-9' },
-    //                 { title: 'Ketu: 2008-3-23' },
-    //                 { title: 'Venus: 2009-6-5' }
-    //             ]
-    //         },
-    //         {
-    //             title: 'Mercury Dasha: 2012-1-15',
-    //             nodes: [
-    //                 { title: 'Sun: 2001-1-15' },
-    //                 { title: 'Moon: 2001-2-9' },
-    //                 { title: 'Mars: 2002-3-9' },
-    //                 { title: 'Rahu: 2004-12-8' },
-    //                 { title: 'Jupiter: 2005-1-9' },
-    //                 { title: 'Saturn: 2006-2-19' },
-    //                 { title: 'Mercury: 2007-5-9' },
-    //                 { title: 'Ketu: 2008-3-23' },
-    //                 { title: 'Venus: 2009-6-5' }
-    //             ]
-    //         },
-    //         {
-    //             title: 'Ketu Dasha: 2012-1-15',
-    //             nodes: [
-    //                 { title: 'Sun: 2001-1-15' },
-    //                 { title: 'Moon: 2001-2-9' },
-    //                 { title: 'Mars: 2002-3-9' },
-    //                 { title: 'Rahu: 2004-12-8' },
-    //                 { title: 'Jupiter: 2005-1-9' },
-    //                 { title: 'Saturn: 2006-2-19' },
-    //                 { title: 'Mercury: 2007-5-9' },
-    //                 { title: 'Ketu: 2008-3-23' },
-    //                 { title: 'Venus: 2009-6-5' }
-    //             ]
-    //         },
-    //         {
-    //             title: 'Venus Dasha: 2012-1-15',
-    //             nodes: [
-    //                 { title: 'Sun: 2001-1-15' },
-    //                 { title: 'Moon: 2001-2-9' },
-    //                 { title: 'Mars: 2002-3-9' },
-    //                 { title: 'Rahu: 2004-12-8' },
-    //                 { title: 'Jupiter: 2005-1-9' },
-    //                 { title: 'Saturn: 2006-2-19' },
-    //                 { title: 'Mercury: 2007-5-9' },
-    //                 { title: 'Ketu: 2008-3-23' },
-    //                 { title: 'Venus: 2009-6-5' }
-    //             ]
-    //         },
-    //     ]
-    // };
 
-    $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function(data) {
-
+    // $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function(data) {
+	$.getJSON('http://127.0.0.1:8080/data.json', function(datao) {    	
+		var array=[]
+		for(a in datao){
+		 array.push(datao[a]);
+		}
+		var data = array.sort(function(a,b){return parseFloat(a.start) - parseFloat(b.start);});
+		// console.log(data);
+		var current = '';
     	var d = {title: 'Dasha'};
     	var list = new Array();
+
         $.each(data, function(i, item){
         	
             var list1 = new Array();
-            $.each(item.subDasas, function(j, it){
-            	list1.push({title: it.dasa + ": " + it.startDate})
+            var subarray=[];
+
+            if ('current' in item) {
+            	// delete item['current'];
+            	subarray.push(item.current);
+            }
+
+			for(a in item.subDasas){
+			 	subarray.push(item.subDasas[a]);
+			}
+
+            var subDasas = subarray.sort(function(a,b){return parseFloat(a.start) - parseFloat(b.start);});
+            $.each(subDasas, function(j, it){
+            	if('dasa' in it) {
+            		list1.push({title: it.dasa + ": " + it.startDate})	
+            	}
             });
             list.push({title: item.dasa + ": " + item.startDate, nodes: list1})
 
@@ -41469,6 +41384,32 @@ $(document).ready(function () {
 	    tree.render();
     });
 
+	var dataSet = [
+	    [ "As", 12, 1, 'Aries' ],
+	    [ "Sun", 23, 2, 'Aries' ],
+	    [ "Moon", 14, 3, 'Aries' ],
+	    [ "Mars", 12, 4, 'Leo' ],
+	    [ "Rahu", 5, 5, 'Cancer' ],
+	    [ "Jupiter", 7,6, 'Taurus' ],
+	    [ "Saturn", 3, 7, 'Gemini' ],
+	    [ "Mercury", 2, 8, 'Pisces' ],
+	    [ "Ketu", 1, 2, 'Sagittarius' ],
+	    [ "Venus", 20, 1, 'Virgo' ],
+	];
+
+    $('#example').DataTable( {
+        data: dataSet,
+        "paging":   false,
+        "ordering": false,
+        "info":     false,
+        "searching": false,
+        columns: [
+            { title: "Rashi" },
+            { title: "Degree" },
+            { title: "House" },
+            { title: "Sign" }
+        ]
+    } );
 
 })
 // The End
