@@ -41038,7 +41038,7 @@ function draw_zodiacs(canvas) {
 function draw_houses(canvas) {
     canvas.font = '8pt Arial';
     canvas.textAlign = 'center';
-    canvas.fillStyle = 'rgb(0,0,255,0.6)';
+    canvas.fillStyle = 'rgb(0,0,255,1)';
 
     var pos = [125, 53, 62, 13, 26, 54, 62, 104,
         26, 154, 62, 195, 125, 154, 188, 195,
@@ -41238,10 +41238,10 @@ function draw_dasha(canvas, canvas_info) {
 }
 
 function draw_empty_chart(canvas, canvas_chart, _x, _y) {
-    canvas.lineWidth = 0.4;
+    canvas.lineWidth = 1;
     canvas.strokeStyle = '000000';
     canvas.shadowColor = "black";
-    canvas.shadowBlur = 1;
+    canvas.shadowBlur = 0;
 
     canvas_chart.addEventListener('contextmenu', function (e) {
         e.preventDefault();
@@ -41257,7 +41257,7 @@ function draw_empty_chart(canvas, canvas_chart, _x, _y) {
     canvas.lineTo(x + 250, y + 200);
     canvas.lineTo(x, y + 200);
     canvas.lineTo(x, y);
-    canvas.lineJoin = 'round';
+    canvas.lineJoin = 'miter';
     canvas.stroke();
 
     /* inner square  */
@@ -41267,7 +41267,7 @@ function draw_empty_chart(canvas, canvas_chart, _x, _y) {
     canvas.lineTo(x + 250, y + 200 / 2);
     canvas.lineTo(x + 250 / 2, y + 200);
     canvas.lineTo(x, y + 200 / 2);
-    canvas.lineJoin = 'round';
+    canvas.lineJoin = 'miter';
     canvas.stroke();
 
     /* diagonals of a square */
@@ -41311,7 +41311,7 @@ function draw_division_chart(canvas, zodiac, house, d) {
         26, 154, 62, 195, 125, 154, 188, 195,
         224, 154, 189, 104, 224, 54, 188, 13];
 
-    canvas.fillStyle = "rgb(255,0,0,0.6)";
+    canvas.fillStyle = "rgb(255,0,0,1)";
     /*if (mybhavas[i].length > 8) 
           canvas.font = '7pt Arial';
       else 
