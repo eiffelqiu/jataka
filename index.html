@@ -14,8 +14,119 @@
             #canvas_info  { border: 0px solid #000000; outline: none; }    
             #canvas_chart { border: 0px solid #000000; outline: none; }
         </style>
+       
+          <link rel="stylesheet" href="src/fonts/awesome.css">
+          <link href='https://fonts.googleapis.com/css?family=Signika:400,600,700' rel='stylesheet' type='text/css'>
+          <link rel="stylesheet" href="src/css/TreeDataView.css">
+          <script src="src/js/jquery-1.12.0.min.js"></script>
+          <script src="src/js/TreeDataView.js"></script>      
+          <style>
+              
+    .grid-wrapper {
+      width: 100%;
+      margin: 15px auto;
+    }
+    .grid-row {
+      margin-left: -7.5px;
+      margin-right: -7.5px;
+    }
+    .grid-row:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+    .grid-column {
+      width: 86%;
+      padding: 0 7.5px;
+      float: left;
+    }
+    .grid-column-12 {
+      width: 100%;;
+    }
+    .tree-wrapper {
+      margin-bottom: 15px;
+    }
+    .tree-header {
+      padding: 15px;
+      font-family: 'Signika', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      background: #333;
+      color: #FFF;
+      text-transform: uppercase;
+    }
+    .tree-header__info {
+      background: #4DAF7C;
+    }
+          </style>  
     </head>
-    
+    <script>
+        $(document).ready(function() {
+  var data = 
+     {  title: 'Maha Dasha',
+           nodes: [
+             {title: 'Mars Dasha: 2001-1-15',
+               nodes: [
+               {title: 'Sun: 2001-1-15'},
+               {title: 'Moon: 2001-2-9'},
+               {title: 'Mars: 2002-3-9'},
+               {title: 'Rahu: 2004-12-8'},
+               {title: 'Jupiter: 2005-1-9'},
+               {title: 'Saturn: 2006-2-19'},
+               {title: 'Mercury: 2007-5-9'},
+               {title: 'Ketu: 2008-3-23'},
+               {title: 'Venus: 2009-6-5'}
+             ]},
+             {title: 'Rahu Dasha: 2010-1-15',
+               nodes: [
+               {title: 'Sun: 2001-1-15'},
+               {title: 'Moon: 2001-2-9'},
+               {title: 'Mars: 2002-3-9'},
+               {title: 'Rahu: 2004-12-8'},
+               {title: 'Jupiter: 2005-1-9'},
+               {title: 'Saturn: 2006-2-19'},
+               {title: 'Mercury: 2007-5-9'},
+               {title: 'Ketu: 2008-3-23'},
+               {title: 'Venus: 2009-6-5'}
+             ]},
+             {title: 'Jupiter Dasha: 2011-1-15',
+               nodes: [
+               {title: 'Sun: 2001-1-15'},
+               {title: 'Moon: 2001-2-9'},
+               {title: 'Mars: 2002-3-9'},
+               {title: 'Rahu: 2004-12-8'},
+               {title: 'Jupiter: 2005-1-9'},
+               {title: 'Saturn: 2006-2-19'},
+               {title: 'Mercury: 2007-5-9'},
+               {title: 'Ketu: 2008-3-23'},
+               {title: 'Venus: 2009-6-5'}
+             ]},
+             {title: 'Saturn Dasha: 2012-1-15',
+               nodes: [
+               {title: 'Sun: 2001-1-15'},
+               {title: 'Moon: 2001-2-9'},
+               {title: 'Mars: 2002-3-9'},
+               {title: 'Rahu: 2004-12-8'},
+               {title: 'Jupiter: 2005-1-9'},
+               {title: 'Saturn: 2006-2-19'},
+               {title: 'Mercury: 2007-5-9'},
+               {title: 'Ketu: 2008-3-23'},
+               {title: 'Venus: 2009-6-5'}
+             ]},
+           ]
+   };
+
+   var tree = new TreeDataView({
+      append: $('#tree-example-3'),
+      openLevel: 2
+    }, data);
+    tree.render();
+    })
+    </script>
 <body>
 
 <header>
@@ -70,14 +181,25 @@
 
 <article class="disable_select">
     <h1>Birth Info</h1>
+    
     <canvas id="canvas_info" tabindex="0" width="625" height="190">[ Information ]</canvas>
 </article>
 
-
 <article class="disable_select">
     <h1>Dasha Info</h1>
-    <canvas id="dasha_table" tabindex="0" width="625" height="190">[ Dasha ]</canvas>
+    <div class="grid-column">
+
+      <!-- start tree wrapper -->
+        <div class="tree-wrapper">
+        <div class="tree-example" id="tree-example-3"></div>
+        </div>
+    </div>
 </article>
+
+<!-- <article class="disable_select">
+    <h1>Dasha Info</h1>
+    <canvas id="dasha_table" tabindex="0" width="625" height="190">[ Dasha ]</canvas>
+</article> -->
 
 <script>
 
@@ -2043,9 +2165,9 @@
             j = ((th_y * j2 )/ 120)
             j1 = j * 365 * 24 * 60;
             _t.addMinutes(j1)
-            console.log(th_y, j2, j);
+            // console.log(th_y, j2, j);
             var c = new Date(_t); 
-            console.log(dasa_seq[nlord][i] + " " +  c.toISOString().split('T')[0]);
+            // console.log(dasa_seq[nlord][i] + " " +  c.toISOString().split('T')[0]);
         }
 
 
@@ -2273,9 +2395,7 @@ Ke 2100-7-4  Ve 2101-2-2  Su 2102-10-4
     {   
         var canvas_info = document.getElementById('canvas_info');
 
-        var dasha_info = document.getElementById('dasha_table');
 
-        var mydashinfo = dasha_info.getContext('2d');
 
         var myinfo = canvas_info.getContext('2d');
         canvas_info.onselectstart  = function () { return false; }        
@@ -2295,7 +2415,10 @@ Ke 2100-7-4  Ve 2101-2-2  Su 2102-10-4
         draw_division_chart (mychart,mynavamsaz,mynavamsah,'');
 
         draw_info (myinfo,canvas_info,transit);
-        draw_dasha (mydashinfo, dasha_info);
+
+        // var dasha_info = document.getElementById('dasha_table');
+        // var mydashinfo = dasha_info.getContext('2d');
+        // draw_dasha (mydashinfo, dasha_info);
     }
     
     function draw_zodiacs (canvas) 
