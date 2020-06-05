@@ -41341,8 +41341,8 @@ function draw_division_chart(canvas, zodiac, house, d) {
 }
 $(document).ready(function () {
 
-    // $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function(data) {
-	$.getJSON('http://127.0.0.1:8080/data.json', function(datao) {    	
+    $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function(data) {
+	// $.getJSON('http://127.0.0.1:8080/data.json', function(datao) {    	
 		var array=[]
 		for(a in datao){
 		 array.push(datao[a]);
