@@ -41339,6 +41339,8 @@ function draw_division_chart(canvas, zodiac, house, d) {
     canvas.fillStyle = "#000000";
     canvas.fillText("D9 - Navamsa", xoffset, 215);
 }
+
+
 $(document).ready(function () {
 
     $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function(datao) {
@@ -41379,22 +41381,23 @@ $(document).ready(function () {
         d['nodes'] = list;
         var tree = new TreeDataView({
 	        append: $('#tree-example-3'),
-	        openLevel: 2
+	        openLevel: 2,
+  			theme: 'dark'
 	    }, d);
 	    tree.render();
     });
 
 	var dataSet = [
-	    [ "As", 12, 1, 'Aries' ],
-	    [ "Sun", 23, 2, 'Aries' ],
-	    [ "Moon", 14, 3, 'Aries' ],
-	    [ "Mars", 12, 4, 'Leo' ],
-	    [ "Rahu", 5, 5, 'Cancer' ],
-	    [ "Jupiter", 7,6, 'Taurus' ],
-	    [ "Saturn", 3, 7, 'Gemini' ],
-	    [ "Mercury", 2, 8, 'Pisces' ],
-	    [ "Ketu", 1, 2, 'Sagittarius' ],
-	    [ "Venus", 20, 1, 'Virgo' ],
+	    [ "As", 12.3, 1, 'Aries' ],
+	    [ "Sun", 23.4, 2, 'Aries' ],
+	    [ "Moon", 14.5, 3, 'Aries' ],
+	    [ "Mars", 12.1, 4, 'Leo' ],
+	    [ "Rahu", 5.2, 5, 'Cancer' ],
+	    [ "Jupiter", 7.13,6, 'Taurus' ],
+	    [ "Saturn", 3.14, 7, 'Gemini' ],
+	    [ "Mercury", 2.1, 8, 'Pisces' ],
+	    [ "Ketu", 1.3, 2, 'Sagittarius' ],
+	    [ "Venus", 20.20, 1, 'Virgo' ],
 	];
 
     $('#example').DataTable( {
