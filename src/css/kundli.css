@@ -273,3 +273,70 @@ footer {
 footer a {
     margin: 0px 5px;
 }
+
+
+
+body {
+    margin: 1px;
+    padding: 0px;
+    background: #FFFFFF;
+}
+
+#canvas_info {
+    border: 0px solid #000000;
+    outline: none;
+}
+
+#canvas_chart {
+    border: 0px solid #000000;
+    outline: none;
+}
+
+.grid-wrapper {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.grid-row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.grid-row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.grid-column {
+    width: 86%;
+    padding: 0 7.5px;
+    float: left;
+}
+
+.grid-column-12 {
+    width: 100%;
+    ;
+}
+
+.tree-wrapper {
+    margin-bottom: 15px;
+}
+
+.tree-header {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background: #333;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.tree-header__info {
+    background: #4DAF7C;
+}
