@@ -57,15 +57,6 @@
     <article class="disable_select">
         <h1>Rashi & Navamsa</h1>
         <canvas id="canvas_chart" tabindex="1" width="625" height="220">[ Rasi D1 and Navamsa D9 ]</canvas>
-
-        <hr/>
-        <div class="infofooter">
-            <b>Gender</b>: <u>Female</u>        &nbsp;&nbsp;&nbsp;&nbsp;
-            <b>Date of Birth</b>: <u>03 September 1971</u>&nbsp;&nbsp;&nbsp;&nbsp;<u>11:55 AM </u><br/>
-            <b>Place of Birth</b>: <u>Ujjain, M.P., India </u> &nbsp;&nbsp;&nbsp;&nbsp;
-            <b>Longitude</b>: <u>75:46 E  </u>&nbsp;&nbsp;&nbsp;&nbsp;
-            <b>Latitude</b>: <u>23:11 N  </u>&nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
     </article>
      
     <article class="disable_select">
@@ -87,5 +78,14 @@
         </div>
 
     </article>
+    <script>
+        $(document).ready(function () {
+            $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function(datao) {
+            // $.getJSON('http://127.0.0.1:8080/data.json', function(datao) {      
+                draw_jataka(datao);
+                generate();
+            });
+        })
+    </script>
 </body>
 </html>

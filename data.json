@@ -1,1499 +1,624 @@
 {
-    "Sun": {
-        "dasa": "Sun",
-        "end": 1984.1047502354552,
-        "endDate": "08-02-1984",
-        "leaf": false,
-        "level": 1,
-        "period": 6,
-        "running": false,
-        "start": 1978.1047502354552,
-        "startDate": "08-02-1978",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Sun",
-                "end": 1978.4047502354551,
-                "endDate": "28-05-1978",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.3,
-                "running": false,
-                "start": 1978.1047502354552,
-                "startDate": "08-02-1978"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Moon",
-                "end": 1978.9047502354551,
-                "endDate": "27-11-1978",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.5,
-                "running": false,
-                "start": 1978.4047502354551,
-                "startDate": "28-05-1978"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mars",
-                "end": 1979.254750235455,
-                "endDate": "03-04-1979",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.35,
-                "running": false,
-                "start": 1978.9047502354551,
-                "startDate": "27-11-1978"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mercury",
-                "end": 1982.754750235455,
-                "endDate": "03-10-1982",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.85,
-                "running": false,
-                "start": 1981.9047502354551,
-                "startDate": "27-11-1981"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 1980.954750235455,
-                "endDate": "15-12-1980",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.8,
-                "running": false,
-                "start": 1980.1547502354551,
-                "startDate": "26-02-1980"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 1984.104750235455,
-                "endDate": "08-02-1984",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 1,
-                "running": false,
-                "start": 1983.104750235455,
-                "startDate": "08-02-1983"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 1981.9047502354551,
-                "endDate": "27-11-1981",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.95,
-                "running": false,
-                "start": 1980.954750235455,
-                "startDate": "15-12-1980"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 1980.1547502354551,
-                "endDate": "26-02-1980",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.9,
-                "running": false,
-                "start": 1979.254750235455,
-                "startDate": "03-04-1979"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 1983.104750235455,
-                "endDate": "08-02-1983",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Sun"
-                },
-                "period": 0.35,
-                "running": false,
-                "start": 1982.754750235455,
-                "startDate": "03-10-1982"
-            }
-        }
+    "rasi": {
+        "Vrishabha": [
+            "Venus"
+        ],
+        "Mithuna": [
+            "Sun",
+            "Mars",
+            "Mercury"
+        ],
+        "Simha": [
+            "Ascendant"
+        ],
+        "Kanya": [
+            "Ketu"
+        ],
+        "Vrichika": [
+            "Saturn"
+        ],
+        "Kumbha": [
+            "Moon"
+        ],
+        "Meena": [
+            "Jupiter",
+            "Rahu"
+        ]
     },
-    "Moon": {
-        "dasa": "Moon",
-        "end": 1994.1047502354552,
-        "endDate": "08-02-1994",
-        "leaf": false,
-        "level": 1,
-        "period": 10,
-        "running": false,
-        "start": 1984.1047502354552,
-        "startDate": "08-02-1984",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
+    "dasa": {
+        "Mars": {
+            "dasa": "Mars",
+            "endDate": "03-02-1990",
+            "startDate": "03-02-1983",
+            "subDasas": [
+                {
+                    "dasa": "Mars",
+                    "endDate": "02-07-1983",
+                    "startDate": "03-02-1983",
+                    "subDasas": []
                 },
-                "dasa": "Sun",
-                "end": 1994.104750235455,
-                "endDate": "08-02-1994",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
+                {
+                    "dasa": "Rahu",
+                    "endDate": "20-07-1984",
+                    "startDate": "02-07-1983",
+                    "subDasas": []
                 },
-                "period": 0.5,
-                "running": false,
-                "start": 1993.604750235455,
-                "startDate": "09-08-1993"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "26-06-1985",
+                    "startDate": "20-07-1984",
+                    "subDasas": []
                 },
-                "dasa": "Moon",
-                "end": 1984.9380835687884,
-                "endDate": "09-12-1984",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
+                {
+                    "dasa": "Saturn",
+                    "endDate": "05-08-1986",
+                    "startDate": "26-06-1985",
+                    "subDasas": []
                 },
-                "period": 0.8333333333333334,
-                "running": false,
-                "start": 1984.1047502354552,
-                "startDate": "08-02-1984"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Mercury",
+                    "endDate": "02-08-1987",
+                    "startDate": "05-08-1986",
+                    "subDasas": []
                 },
-                "dasa": "Mars",
-                "end": 1985.5214169021217,
-                "endDate": "10-07-1985",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
+                {
+                    "dasa": "Ketu",
+                    "endDate": "29-12-1987",
+                    "startDate": "02-08-1987",
+                    "subDasas": []
                 },
-                "period": 0.5833333333333334,
-                "running": false,
-                "start": 1984.9380835687884,
-                "startDate": "09-12-1984"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Venus",
+                    "endDate": "28-02-1989",
+                    "startDate": "29-12-1987",
+                    "subDasas": []
                 },
-                "dasa": "Mercury",
-                "end": 1991.354750235455,
-                "endDate": "10-05-1991",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
+                {
+                    "dasa": "Sun",
+                    "endDate": "05-07-1989",
+                    "startDate": "28-02-1989",
+                    "subDasas": []
                 },
-                "period": 1.4166666666666667,
-                "running": false,
-                "start": 1989.9380835687882,
-                "startDate": "09-12-1989"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 1988.354750235455,
-                "endDate": "09-05-1988",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
-                },
-                "period": 1.3333333333333333,
-                "running": false,
-                "start": 1987.0214169021217,
-                "startDate": "08-01-1987"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 1993.604750235455,
-                "endDate": "09-08-1993",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
-                },
-                "period": 1.6666666666666667,
-                "running": false,
-                "start": 1991.9380835687882,
-                "startDate": "09-12-1991"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 1989.9380835687882,
-                "endDate": "09-12-1989",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
-                },
-                "period": 1.5833333333333333,
-                "running": false,
-                "start": 1988.354750235455,
-                "startDate": "09-05-1988"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 1987.0214169021217,
-                "endDate": "08-01-1987",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
-                },
-                "period": 1.5,
-                "running": false,
-                "start": 1985.5214169021217,
-                "startDate": "10-07-1985"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 1991.9380835687882,
-                "endDate": "09-12-1991",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Moon"
-                },
-                "period": 0.5833333333333334,
-                "running": false,
-                "start": 1991.354750235455,
-                "startDate": "10-05-1991"
-            }
-        }
-    },
-    "Mars": {
-        "dasa": "Mars",
-        "end": 2001.1047502354552,
-        "endDate": "08-02-2001",
-        "leaf": false,
-        "level": 1,
-        "period": 7,
-        "running": false,
-        "start": 1994.1047502354552,
-        "startDate": "08-02-1994",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Sun",
-                "end": 2000.5214169021217,
-                "endDate": "09-07-2000",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 0.35,
-                "running": false,
-                "start": 2000.1714169021218,
-                "startDate": "03-03-2000"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Moon",
-                "end": 2001.104750235455,
-                "endDate": "08-02-2001",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 0.5833333333333334,
-                "running": false,
-                "start": 2000.5214169021217,
-                "startDate": "09-07-2000"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mars",
-                "end": 1994.5130835687885,
-                "endDate": "07-07-1994",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 0.4083333333333333,
-                "running": false,
-                "start": 1994.1047502354552,
-                "startDate": "08-02-1994"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mercury",
-                "end": 1998.5964169021217,
-                "endDate": "06-08-1998",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 0.9916666666666667,
-                "running": false,
-                "start": 1997.6047502354552,
-                "startDate": "09-08-1997"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 1996.4964169021218,
-                "endDate": "30-06-1996",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 0.9333333333333333,
-                "running": false,
-                "start": 1995.5630835687884,
-                "startDate": "25-07-1995"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 2000.1714169021218,
-                "endDate": "03-03-2000",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 1.1666666666666667,
-                "running": false,
-                "start": 1999.004750235455,
-                "startDate": "02-01-1999"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 1997.6047502354552,
-                "endDate": "09-08-1997",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 1.1083333333333334,
-                "running": false,
-                "start": 1996.4964169021218,
-                "startDate": "30-06-1996"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 1995.5630835687884,
-                "endDate": "25-07-1995",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 1.05,
-                "running": false,
-                "start": 1994.5130835687885,
-                "startDate": "07-07-1994"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 1999.004750235455,
-                "endDate": "02-01-1999",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mars"
-                },
-                "period": 0.4083333333333333,
-                "running": false,
-                "start": 1998.5964169021217,
-                "startDate": "06-08-1998"
-            }
-        }
-    },
-    "Mercury": {
-        "dasa": "Mercury",
-        "end": 2071.104750235455,
-        "endDate": "08-02-2071",
-        "leaf": false,
-        "level": 1,
-        "period": 17,
-        "running": false,
-        "start": 2054.104750235455,
-        "startDate": "08-02-2054",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Sun",
-                "end": 2061.1880835687884,
-                "endDate": "10-03-2061",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 0.85,
-                "running": false,
-                "start": 2060.3380835687885,
-                "startDate": "03-05-2060"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Moon",
-                "end": 2062.604750235455,
-                "endDate": "09-08-2062",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 1.4166666666666667,
-                "running": false,
-                "start": 2061.1880835687884,
-                "startDate": "10-03-2061"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mars",
-                "end": 2063.5964169021217,
-                "endDate": "06-08-2063",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 0.9916666666666667,
-                "running": false,
-                "start": 2062.604750235455,
-                "startDate": "09-08-2062"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mercury",
-                "end": 2056.5130835687883,
-                "endDate": "06-07-2056",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 2.408333333333333,
-                "running": false,
-                "start": 2054.104750235455,
-                "startDate": "08-02-2054"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 2068.413083568789,
-                "endDate": "31-05-2068",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 2.2666666666666666,
-                "running": false,
-                "start": 2066.146416902122,
-                "startDate": "23-02-2066"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 2060.3380835687885,
-                "endDate": "03-05-2060",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 2.8333333333333335,
-                "running": false,
-                "start": 2057.504750235455,
-                "startDate": "04-07-2057"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 2071.1047502354554,
-                "endDate": "08-02-2071",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 2.691666666666667,
-                "running": false,
-                "start": 2068.413083568789,
-                "startDate": "31-05-2068"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 2066.146416902122,
-                "endDate": "23-02-2066",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 2.55,
-                "running": false,
-                "start": 2063.5964169021217,
-                "startDate": "06-08-2063"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 2057.504750235455,
-                "endDate": "04-07-2057",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Mercury"
-                },
-                "period": 0.9916666666666667,
-                "running": false,
-                "start": 2056.5130835687883,
-                "startDate": "06-07-2056"
-            }
-        }
-    },
-    "Jupiter": {
-        "current": {
-            "current": {
-                "$ref": "@"
-            },
-            "dasa": "Jupiter",
-            "end": 2021.2380835687886,
-            "endDate": "28-03-2021",
-            "leaf": true,
-            "level": 2,
-            "parent": {
-                "$ref": ".."
-            },
-            "period": 2.1333333333333333,
-            "running": true,
-            "start": 2019.1047502354552,
-            "startDate": "08-02-2019"
+                {
+                    "dasa": "Moon",
+                    "endDate": "03-02-1990",
+                    "startDate": "05-07-1989",
+                    "subDasas": []
+                }
+            ]
         },
-        "dasa": "Jupiter",
-        "end": 2035.1047502354552,
-        "endDate": "08-02-2035",
-        "leaf": false,
-        "level": 1,
-        "period": 16,
-        "running": true,
-        "start": 2019.1047502354552,
-        "startDate": "08-02-2019",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
+        "Jupiter": {
+            "dasa": "Jupiter",
+            "endDate": "03-02-2024",
+            "startDate": "03-02-2008",
+            "subDasas": [
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "24-03-2010",
+                    "startDate": "03-02-2008",
+                    "subDasas": []
                 },
-                "dasa": "Sun",
-                "end": 2030.4380835687887,
-                "endDate": "09-06-2030",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Saturn",
+                    "endDate": "04-10-2012",
+                    "startDate": "24-03-2010",
+                    "subDasas": []
                 },
-                "period": 0.8,
-                "running": false,
-                "start": 2029.6380835687887,
-                "startDate": "21-08-2029"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Mercury",
+                    "endDate": "10-01-2015",
+                    "startDate": "04-10-2012",
+                    "subDasas": []
                 },
-                "dasa": "Moon",
-                "end": 2031.771416902122,
-                "endDate": "09-10-2031",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Ketu",
+                    "endDate": "17-12-2015",
+                    "startDate": "10-01-2015",
+                    "subDasas": []
                 },
-                "period": 1.3333333333333333,
-                "running": false,
-                "start": 2030.4380835687887,
-                "startDate": "09-06-2030"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Venus",
+                    "endDate": "17-08-2018",
+                    "startDate": "17-12-2015",
+                    "subDasas": []
                 },
-                "dasa": "Mars",
-                "end": 2032.7047502354553,
-                "endDate": "14-09-2032",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Sun",
+                    "endDate": "05-06-2019",
+                    "startDate": "17-08-2018",
+                    "subDasas": []
                 },
-                "period": 0.9333333333333333,
-                "running": false,
-                "start": 2031.771416902122,
-                "startDate": "09-10-2031"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Moon",
+                    "endDate": "04-10-2020",
+                    "startDate": "05-06-2019",
+                    "subDasas": []
                 },
-                "dasa": "Mercury",
-                "end": 2026.0380835687886,
-                "endDate": "14-01-2026",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Mars",
+                    "endDate": "10-09-2021",
+                    "startDate": "04-10-2020",
+                    "subDasas": []
                 },
-                "period": 2.2666666666666666,
-                "running": false,
-                "start": 2023.771416902122,
-                "startDate": "09-10-2023"
-            },
-            "Jupiter": {
-                "$ref": "$.Jupiter.current"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Rahu",
+                    "endDate": "03-02-2024",
+                    "startDate": "10-09-2021",
+                    "subDasas": []
+                }
+            ]
+        },
+        "Saturn": {
+            "dasa": "Saturn",
+            "endDate": "03-02-2043",
+            "startDate": "03-02-2024",
+            "subDasas": [
+                {
+                    "dasa": "Saturn",
+                    "endDate": "06-02-2027",
+                    "startDate": "03-02-2024",
+                    "subDasas": []
                 },
-                "dasa": "Venus",
-                "end": 2029.6380835687887,
-                "endDate": "21-08-2029",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Mercury",
+                    "endDate": "17-10-2029",
+                    "startDate": "06-02-2027",
+                    "subDasas": []
                 },
-                "period": 2.6666666666666665,
-                "running": false,
-                "start": 2026.971416902122,
-                "startDate": "21-12-2026"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Ketu",
+                    "endDate": "25-11-2030",
+                    "startDate": "17-10-2029",
+                    "subDasas": []
                 },
-                "dasa": "Saturn",
-                "end": 2023.771416902122,
-                "endDate": "09-10-2023",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Venus",
+                    "endDate": "25-01-2034",
+                    "startDate": "25-11-2030",
+                    "subDasas": []
                 },
-                "period": 2.533333333333333,
-                "running": false,
-                "start": 2021.2380835687886,
-                "startDate": "28-03-2021"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Sun",
+                    "endDate": "07-01-2035",
+                    "startDate": "25-01-2034",
+                    "subDasas": []
                 },
-                "dasa": "Rahu",
-                "end": 2035.1047502354554,
-                "endDate": "08-02-2035",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Moon",
+                    "endDate": "07-08-2036",
+                    "startDate": "07-01-2035",
+                    "subDasas": []
                 },
-                "period": 2.4,
-                "running": false,
-                "start": 2032.7047502354553,
-                "startDate": "14-09-2032"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
+                {
+                    "dasa": "Mars",
+                    "endDate": "16-09-2037",
+                    "startDate": "07-08-2036",
+                    "subDasas": []
                 },
-                "dasa": "Ketu",
-                "end": 2026.971416902122,
-                "endDate": "21-12-2026",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Jupiter"
+                {
+                    "dasa": "Rahu",
+                    "endDate": "23-07-2040",
+                    "startDate": "16-09-2037",
+                    "subDasas": []
                 },
-                "period": 0.9333333333333333,
-                "running": false,
-                "start": 2026.0380835687886,
-                "startDate": "14-01-2026"
-            }
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "03-02-2043",
+                    "startDate": "23-07-2040",
+                    "subDasas": []
+                }
+            ]
+        },
+        "Moon": {
+            "dasa": "Moon",
+            "endDate": "03-02-2103",
+            "startDate": "03-02-2093",
+            "subDasas": [
+                {
+                    "dasa": "Moon",
+                    "endDate": "04-12-2093",
+                    "startDate": "03-02-2093",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mars",
+                    "endDate": "05-07-2094",
+                    "startDate": "04-12-2093",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Rahu",
+                    "endDate": "04-01-2096",
+                    "startDate": "05-07-2094",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "06-05-2097",
+                    "startDate": "04-01-2096",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Saturn",
+                    "endDate": "04-12-2098",
+                    "startDate": "06-05-2097",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mercury",
+                    "endDate": "06-05-2100",
+                    "startDate": "04-12-2098",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Ketu",
+                    "endDate": "04-12-2100",
+                    "startDate": "06-05-2100",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Venus",
+                    "endDate": "05-08-2102",
+                    "startDate": "04-12-2100",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Sun",
+                    "endDate": "03-02-2103",
+                    "startDate": "05-08-2102",
+                    "subDasas": []
+                }
+            ]
+        },
+        "Venus": {
+            "dasa": "Venus",
+            "endDate": "03-02-2087",
+            "startDate": "03-02-2067",
+            "subDasas": [
+                {
+                    "dasa": "Venus",
+                    "endDate": "05-06-2070",
+                    "startDate": "03-02-2067",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Sun",
+                    "endDate": "05-06-2071",
+                    "startDate": "05-06-2070",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Moon",
+                    "endDate": "03-02-2073",
+                    "startDate": "05-06-2071",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mars",
+                    "endDate": "05-04-2074",
+                    "startDate": "03-02-2073",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Rahu",
+                    "endDate": "05-04-2077",
+                    "startDate": "05-04-2074",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "04-12-2079",
+                    "startDate": "05-04-2077",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Saturn",
+                    "endDate": "03-02-2083",
+                    "startDate": "04-12-2079",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mercury",
+                    "endDate": "04-12-2085",
+                    "startDate": "03-02-2083",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Ketu",
+                    "endDate": "03-02-2087",
+                    "startDate": "04-12-2085",
+                    "subDasas": []
+                }
+            ]
+        },
+        "Ketu": {
+            "dasa": "Ketu",
+            "endDate": "03-02-2067",
+            "startDate": "03-02-2060",
+            "subDasas": [
+                {
+                    "dasa": "Ketu",
+                    "endDate": "02-07-2060",
+                    "startDate": "03-02-2060",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Venus",
+                    "endDate": "01-09-2061",
+                    "startDate": "02-07-2060",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Sun",
+                    "endDate": "07-01-2062",
+                    "startDate": "01-09-2061",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Moon",
+                    "endDate": "08-08-2062",
+                    "startDate": "07-01-2062",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mars",
+                    "endDate": "04-01-2063",
+                    "startDate": "08-08-2062",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Rahu",
+                    "endDate": "22-01-2064",
+                    "startDate": "04-01-2063",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "29-12-2064",
+                    "startDate": "22-01-2064",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Saturn",
+                    "endDate": "06-02-2066",
+                    "startDate": "29-12-2064",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mercury",
+                    "endDate": "03-02-2067",
+                    "startDate": "06-02-2066",
+                    "subDasas": []
+                }
+            ]
+        },
+        "Rahu": {
+            "dasa": "Rahu",
+            "endDate": "03-02-2008",
+            "startDate": "03-02-1990",
+            "subDasas": [
+                {
+                    "dasa": "Rahu",
+                    "endDate": "17-10-1992",
+                    "startDate": "03-02-1990",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "12-03-1995",
+                    "startDate": "17-10-1992",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Saturn",
+                    "endDate": "16-01-1998",
+                    "startDate": "12-03-1995",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mercury",
+                    "endDate": "04-08-2000",
+                    "startDate": "16-01-1998",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Ketu",
+                    "endDate": "23-08-2001",
+                    "startDate": "04-08-2000",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Venus",
+                    "endDate": "23-08-2004",
+                    "startDate": "23-08-2001",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Sun",
+                    "endDate": "18-07-2005",
+                    "startDate": "23-08-2004",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Moon",
+                    "endDate": "16-01-2007",
+                    "startDate": "18-07-2005",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mars",
+                    "endDate": "03-02-2008",
+                    "startDate": "16-01-2007",
+                    "subDasas": []
+                }
+            ]
+        },
+        "Sun": {
+            "dasa": "Sun",
+            "endDate": "03-02-2093",
+            "startDate": "03-02-2087",
+            "subDasas": [
+                {
+                    "dasa": "Sun",
+                    "endDate": "24-05-2087",
+                    "startDate": "03-02-2087",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Moon",
+                    "endDate": "22-11-2087",
+                    "startDate": "24-05-2087",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mars",
+                    "endDate": "29-03-2088",
+                    "startDate": "22-11-2087",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Rahu",
+                    "endDate": "22-02-2089",
+                    "startDate": "29-03-2088",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "11-12-2089",
+                    "startDate": "22-02-2089",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Saturn",
+                    "endDate": "22-11-2090",
+                    "startDate": "11-12-2089",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mercury",
+                    "endDate": "29-09-2091",
+                    "startDate": "22-11-2090",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Ketu",
+                    "endDate": "03-02-2092",
+                    "startDate": "29-09-2091",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Venus",
+                    "endDate": "03-02-2093",
+                    "startDate": "03-02-2092",
+                    "subDasas": []
+                }
+            ]
+        },
+        "Mercury": {
+            "dasa": "Mercury",
+            "endDate": "03-02-2060",
+            "startDate": "03-02-2043",
+            "subDasas": [
+                {
+                    "dasa": "Mercury",
+                    "endDate": "02-07-2045",
+                    "startDate": "03-02-2043",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Ketu",
+                    "endDate": "29-06-2046",
+                    "startDate": "02-07-2045",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Venus",
+                    "endDate": "29-04-2049",
+                    "startDate": "29-06-2046",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Sun",
+                    "endDate": "06-03-2050",
+                    "startDate": "29-04-2049",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Moon",
+                    "endDate": "05-08-2051",
+                    "startDate": "06-03-2050",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Mars",
+                    "endDate": "01-08-2052",
+                    "startDate": "05-08-2051",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Rahu",
+                    "endDate": "18-02-2055",
+                    "startDate": "01-08-2052",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Jupiter",
+                    "endDate": "27-05-2057",
+                    "startDate": "18-02-2055",
+                    "subDasas": []
+                },
+                {
+                    "dasa": "Saturn",
+                    "endDate": "03-02-2060",
+                    "startDate": "27-05-2057",
+                    "subDasas": []
+                }
+            ]
         }
     },
-    "Venus": {
-        "dasa": "Venus",
-        "end": 2098.104750235455,
-        "endDate": "08-02-2098",
-        "leaf": false,
-        "level": 1,
-        "period": 20,
-        "running": false,
-        "start": 2078.104750235455,
-        "startDate": "08-02-2078",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Sun",
-                "end": 2082.4380835687884,
-                "endDate": "09-06-2082",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 1,
-                "running": false,
-                "start": 2081.4380835687884,
-                "startDate": "09-06-2081"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Moon",
-                "end": 2084.104750235455,
-                "endDate": "08-02-2084",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 1.6666666666666667,
-                "running": false,
-                "start": 2082.4380835687884,
-                "startDate": "09-06-2082"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mars",
-                "end": 2085.2714169021215,
-                "endDate": "10-04-2085",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 1.1666666666666667,
-                "running": false,
-                "start": 2084.104750235455,
-                "startDate": "08-02-2084"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mercury",
-                "end": 2096.938083568788,
-                "endDate": "09-12-2096",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 2.8333333333333335,
-                "running": false,
-                "start": 2094.1047502354545,
-                "startDate": "08-02-2094"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 2090.938083568788,
-                "endDate": "09-12-2090",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 2.6666666666666665,
-                "running": false,
-                "start": 2088.2714169021215,
-                "startDate": "09-04-2088"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 2081.4380835687884,
-                "endDate": "09-06-2081",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 3.3333333333333335,
-                "running": false,
-                "start": 2078.104750235455,
-                "startDate": "08-02-2078"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 2094.1047502354545,
-                "endDate": "08-02-2094",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 3.1666666666666665,
-                "running": false,
-                "start": 2090.938083568788,
-                "startDate": "09-12-2090"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 2088.2714169021215,
-                "endDate": "09-04-2088",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 3,
-                "running": false,
-                "start": 2085.2714169021215,
-                "startDate": "10-04-2085"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 2098.1047502354545,
-                "endDate": "08-02-2098",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Venus"
-                },
-                "period": 1.1666666666666667,
-                "running": false,
-                "start": 2096.938083568788,
-                "startDate": "09-12-2096"
-            }
-        }
+    "navamsa": {
+        "Mesha": [
+            "Mars",
+            "Mercury",
+            "Venus"
+        ],
+        "Vrishabha": [
+            "Ketu"
+        ],
+        "Mithuna": [
+            "Ascendant"
+        ],
+        "Thula": [
+            "Sun",
+            "Moon"
+        ],
+        "Vrichika": [
+            "Rahu"
+        ],
+        "Kumbha": [
+            "Saturn"
+        ],
+        "Meena": [
+            "Jupiter"
+        ]
     },
-    "Saturn": {
-        "dasa": "Saturn",
-        "end": 2054.104750235455,
-        "endDate": "08-02-2054",
-        "leaf": false,
-        "level": 1,
-        "period": 19,
-        "running": false,
-        "start": 2035.1047502354552,
-        "startDate": "08-02-2035",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Sun",
-                "end": 2046.0297502354554,
-                "endDate": "11-01-2046",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 0.95,
-                "running": false,
-                "start": 2045.0797502354553,
-                "startDate": "30-01-2045"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Moon",
-                "end": 2047.6130835687886,
-                "endDate": "12-08-2047",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 1.5833333333333333,
-                "running": false,
-                "start": 2046.0297502354554,
-                "startDate": "11-01-2046"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mars",
-                "end": 2048.7214169021217,
-                "endDate": "21-09-2048",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 1.1083333333333334,
-                "running": false,
-                "start": 2047.6130835687886,
-                "startDate": "12-08-2047"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mercury",
-                "end": 2040.8047502354552,
-                "endDate": "21-10-2040",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 2.691666666666667,
-                "running": false,
-                "start": 2038.1130835687886,
-                "startDate": "11-02-2038"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 2054.104750235455,
-                "endDate": "08-02-2054",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 2.533333333333333,
-                "running": false,
-                "start": 2051.5714169021217,
-                "startDate": "28-07-2051"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 2045.0797502354553,
-                "endDate": "30-01-2045",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 3.1666666666666665,
-                "running": false,
-                "start": 2041.9130835687886,
-                "startDate": "30-11-2041"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 2038.1130835687886,
-                "endDate": "11-02-2038",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 3.0083333333333333,
-                "running": false,
-                "start": 2035.1047502354552,
-                "startDate": "08-02-2035"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 2051.5714169021217,
-                "endDate": "28-07-2051",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 2.85,
-                "running": false,
-                "start": 2048.7214169021217,
-                "startDate": "21-09-2048"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 2041.9130835687886,
-                "endDate": "30-11-2041",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Saturn"
-                },
-                "period": 1.1083333333333334,
-                "running": false,
-                "start": 2040.8047502354552,
-                "startDate": "21-10-2040"
-            }
-        }
-    },
-    "Rahu": {
-        "dasa": "Rahu",
-        "end": 2019.1047502354552,
-        "endDate": "08-02-2019",
-        "leaf": false,
-        "level": 1,
-        "period": 18,
-        "running": false,
-        "start": 2001.1047502354552,
-        "startDate": "08-02-2001",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Sun",
-                "end": 2016.5547502354552,
-                "endDate": "22-07-2016",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 0.9,
-                "running": false,
-                "start": 2015.6547502354551,
-                "startDate": "27-08-2015"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Moon",
-                "end": 2018.0547502354552,
-                "endDate": "20-01-2018",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 1.5,
-                "running": false,
-                "start": 2016.5547502354552,
-                "startDate": "22-07-2016"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mars",
-                "end": 2019.1047502354552,
-                "endDate": "08-02-2019",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 1.05,
-                "running": false,
-                "start": 2018.0547502354552,
-                "startDate": "20-01-2018"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mercury",
-                "end": 2011.6047502354552,
-                "endDate": "09-08-2011",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 2.55,
-                "running": false,
-                "start": 2009.0547502354552,
-                "startDate": "20-01-2009"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 2006.2047502354553,
-                "endDate": "16-03-2006",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 2.4,
-                "running": false,
-                "start": 2003.8047502354552,
-                "startDate": "21-10-2003"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 2015.6547502354551,
-                "endDate": "27-08-2015",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 3,
-                "running": false,
-                "start": 2012.6547502354551,
-                "startDate": "27-08-2012"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 2009.0547502354552,
-                "endDate": "20-01-2009",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 2.85,
-                "running": false,
-                "start": 2006.2047502354553,
-                "startDate": "16-03-2006"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 2003.8047502354552,
-                "endDate": "21-10-2003",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 2.7,
-                "running": false,
-                "start": 2001.1047502354552,
-                "startDate": "08-02-2001"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 2012.6547502354551,
-                "endDate": "27-08-2012",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Rahu"
-                },
-                "period": 1.05,
-                "running": false,
-                "start": 2011.6047502354552,
-                "startDate": "09-08-2011"
-            }
-        }
-    },
-    "Ketu": {
-        "dasa": "Ketu",
-        "end": 2078.104750235455,
-        "endDate": "08-02-2078",
-        "leaf": false,
-        "level": 1,
-        "period": 7,
-        "running": false,
-        "start": 2071.104750235455,
-        "startDate": "08-02-2071",
-        "subDasas": {
-            "Sun": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Sun",
-                "end": 2073.0297502354547,
-                "endDate": "11-01-2073",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 0.35,
-                "running": false,
-                "start": 2072.679750235455,
-                "startDate": "05-09-2072"
-            },
-            "Moon": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Moon",
-                "end": 2073.613083568788,
-                "endDate": "12-08-2073",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 0.5833333333333334,
-                "running": false,
-                "start": 2073.0297502354547,
-                "startDate": "11-01-2073"
-            },
-            "Mars": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mars",
-                "end": 2074.0214169021215,
-                "endDate": "08-01-2074",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 0.4083333333333333,
-                "running": false,
-                "start": 2073.613083568788,
-                "startDate": "12-08-2073"
-            },
-            "Mercury": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Mercury",
-                "end": 2078.104750235455,
-                "endDate": "08-02-2078",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 0.9916666666666667,
-                "running": false,
-                "start": 2077.113083568788,
-                "startDate": "11-02-2077"
-            },
-            "Jupiter": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Jupiter",
-                "end": 2076.004750235455,
-                "endDate": "02-01-2076",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 0.9333333333333333,
-                "running": false,
-                "start": 2075.0714169021217,
-                "startDate": "27-01-2075"
-            },
-            "Venus": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Venus",
-                "end": 2072.679750235455,
-                "endDate": "05-09-2072",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 1.1666666666666667,
-                "running": false,
-                "start": 2071.5130835687883,
-                "startDate": "07-07-2071"
-            },
-            "Saturn": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Saturn",
-                "end": 2077.113083568788,
-                "endDate": "11-02-2077",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 1.1083333333333334,
-                "running": false,
-                "start": 2076.004750235455,
-                "startDate": "02-01-2076"
-            },
-            "Rahu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Rahu",
-                "end": 2075.0714169021217,
-                "endDate": "27-01-2075",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 1.05,
-                "running": false,
-                "start": 2074.0214169021215,
-                "startDate": "08-01-2074"
-            },
-            "Ketu": {
-                "current": {
-                    "$ref": "@"
-                },
-                "dasa": "Ketu",
-                "end": 2071.5130835687883,
-                "endDate": "07-07-2071",
-                "leaf": true,
-                "level": 2,
-                "parent": {
-                    "$ref": "$.Ketu"
-                },
-                "period": 0.4083333333333333,
-                "running": false,
-                "start": 2071.104750235455,
-                "startDate": "08-02-2071"
-            }
-        }
+    "info": {
+        "Time Of Birth": "10:05:00 AM",
+        "Thithi": "Sashti",
+        "Date Of Birth": "六月 16 1987",
+        "Nakshathra": {
+            "nak": "Avittam",
+            "pada": 3
+        },
+        "Rasi ": "Kumbha",
+        "Sunrise/Sunset ": "04:51 AM/06:25 PM",
+        "Name": "ccc",
+        "Langa": "Simha",
+        "Current Period": "Ju/Mo",
+        "Dasa ": "Bal of Ma Dasa 2y 7m 20d ",
+        "Siderial Time": "004 : 02 : 26",
+        "Yoga": "Vishakambha",
+        "Place": "Chandia",
+        "Ayanamsa": "023 : 40 : 54"
     }
 }
