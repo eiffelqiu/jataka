@@ -126,16 +126,16 @@ function draw_jataka(datao) {
 	    } );
 
         var infoarr1 = [];
-        infoarr1.push(['As',2.7]);
-        infoarr1.push(['Su',2.7]);
-        infoarr1.push(['Mo',2.7]);
-        infoarr1.push(['Ma',2.7]);
-        infoarr1.push(['Ra',2.7]);
-        infoarr1.push(['Ju',2.7]);
-        infoarr1.push(['Sa',2.7]);
-        infoarr1.push(['Me',2.7]);
-        infoarr1.push(['Ke',2.7]);
-        infoarr1.push(['Ve',2.7]);
+        infoarr1.push(['As',2.7,'Ar']);
+        infoarr1.push(['Su',2.7,'Ar']);
+        infoarr1.push(['Mo',2.7,'Ar']);
+        infoarr1.push(['Ma',2.7,'Ar']);
+        infoarr1.push(['Ra',2.7,'Ar']);
+        infoarr1.push(['Ju',2.7,'Ar']);
+        infoarr1.push(['Sa',2.7,'Ar']);
+        infoarr1.push(['Me',2.7,'Ar']);
+        infoarr1.push(['Ke',2.7,'Ar']);
+        infoarr1.push(['Ve',2.7,'Ar']);
 
         $('#example1').DataTable( {
             data: infoarr1,
@@ -146,6 +146,7 @@ function draw_jataka(datao) {
             columns: [
                 { title: "" },
                 { title: "" },
+                { title: "" }
             ]
         } );
 
@@ -323,7 +324,6 @@ function generate_house_array(obj) {
     draw_gong(mychart,as);
     draw_grahas(mychart,grahas);
 
-    console.log(as9,grahas9);
     draw_empty_chart(mychart, canvas_chart, 330, 0);
     draw_d9_chart(mychart, as9, grahas9, '');
 
