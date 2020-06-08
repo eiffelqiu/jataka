@@ -125,6 +125,30 @@ function draw_jataka(datao) {
 	        ]
 	    } );
 
+        var infoarr1 = [];
+        infoarr1.push(['As',2.7]);
+        infoarr1.push(['Su',2.7]);
+        infoarr1.push(['Mo',2.7]);
+        infoarr1.push(['Ma',2.7]);
+        infoarr1.push(['Ra',2.7]);
+        infoarr1.push(['Ju',2.7]);
+        infoarr1.push(['Sa',2.7]);
+        infoarr1.push(['Me',2.7]);
+        infoarr1.push(['Ke',2.7]);
+        infoarr1.push(['Ve',2.7]);
+
+        $('#example1').DataTable( {
+            data: infoarr1,
+            "paging":   false,
+            "ordering": false,
+            "info":     false,
+            "searching": false,
+            columns: [
+                { title: "" },
+                { title: "" },
+            ]
+        } );
+
 		var data = array.sort(function(a,b){return parseFloat(a.start) - parseFloat(b.start);});
 		var current = '';
     	var d = {title: 'Dasha'};

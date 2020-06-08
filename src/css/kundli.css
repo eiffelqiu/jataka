@@ -135,7 +135,7 @@ section {
     float: right;
     width: 178px;
     text-align: left;
-    visibility:hidden; 
+    /*visibility:hidden; */
 }
 
 section h1, section h2, section h3, section h4, section h5, section h6 {
@@ -170,7 +170,7 @@ section li a:hover {
 }
 
 article {
-    float: left;
+    float: right;
     width: 650px;
     text-align: left;
 }
