@@ -192,6 +192,7 @@ function draw_d9_chart(canvas, zodiac, house, d) {
         200, 154, 139, 104, 200, 54, 188, 43];
 
     canvas.fillStyle = "rgb(0,0,0,1)";
+    console.log(zodiac);
     canvas.fillText(zodiac[0], pos[0] + xoffset, pos[1]);
     canvas.fillText(zodiac[1], pos[2] + xoffset, pos[3]);
     canvas.fillText(zodiac[2], pos[4] + xoffset, pos[5]);
@@ -310,8 +311,12 @@ function generate_house_array(obj) {
     draw_gong(mychart, as);
     draw_grahas(mychart, grahas);
 
+    as9 = as9.slice(-2).concat(as9.slice(0,as9.length - 2))
+    grahas9 = grahas9.slice(-2).concat(grahas9.slice(0,grahas9.length - 2))
+
     draw_empty_chart(mychart, canvas_chart, 330, 0);
     draw_d9_chart(mychart, as9, grahas9, '');
+    console.log("as9 " + grahas9);   
 
 
 }
