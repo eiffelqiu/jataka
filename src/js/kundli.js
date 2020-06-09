@@ -101,17 +101,20 @@ function draw_jataka(datao) {
 		for(a in datao['dasa']){
 		 array.push(datao['dasa'][a]);
 		}
-        console.log(array);
 		var infoarr = [];
+
 		infoarr.push(['Name',datao['info']['Name']]);
 		infoarr.push(['Place',datao['info']['Place']]);
-		infoarr.push(["Date Of Birth",datao['info']["Date Of Birth"]]);
-		infoarr.push(["Time Of Birth",datao['info']["Time Of Birth"]]);
+        infoarr.push(["lon",datao['info']["lon"]]);
+        infoarr.push(["lat",datao['info']["lat"]]);
+		infoarr.push(["Date Of Birth",datao['info']["DateOfBirth"]]);
+		infoarr.push(["Time Of Birth",datao['info']["TimeOfBirth"]]);
 		infoarr.push(["Langa",datao['info']["Langa"]]);
 		infoarr.push(["Ayanamsa",datao['info']["Ayanamsa"]]);
 		infoarr.push(["Nakshathra",datao['info']["Nakshathra"]['nak']]);
-		infoarr.push(["Dasa ",datao['info']["Dasa "]]);
-		infoarr.push(["Current Period",datao['info']["Current Period"]]);
+        infoarr.push(["Nakshathra Pada",datao['info']["Nakshathra"]['pada']]);
+		infoarr.push(["Dasa",datao['info']["Dasa"]]);
+		infoarr.push(["Current Period",datao['info']["CurrentPeriod"]]);
 
 	    $('#example').DataTable( {
 	        data: infoarr,
@@ -126,32 +129,27 @@ function draw_jataka(datao) {
 	    } );
 
         var infoarr1 = [];
-        infoarr1.push(['As',2.7,'Ar']);
-        infoarr1.push(['Su',2.7,'Ar']);
-        infoarr1.push(['Mo',2.7,'Ar']);
-        infoarr1.push(['Ma',2.7,'Ar']);
-        infoarr1.push(['Ra',2.7,'Ar']);
-        infoarr1.push(['Ju',2.7,'Ar']);
-        infoarr1.push(['Sa',2.7,'Ar']);
-        infoarr1.push(['Me',2.7,'Ar']);
-        infoarr1.push(['Ke',2.7,'Ar']);
-        infoarr1.push(['Ve',2.7,'Ar']);
+
+        var grahas_arr = [];
+        for(a in datao['planets']){
+            var tm = (datao['planets'][a]['character'] == true) ? '(R)':'';
+            grahas_arr.push([datao['planets'][a]['name'] + tm  ,datao['planets'][a]['pos'].toFixed(2),datao['planets'][a]['rasi']]);
+        }
 
         $('#example1').DataTable( {
-            data: infoarr1,
+            data: grahas_arr,
             "paging":   false,
             "ordering": false,
             "info":     false,
             "searching": false,
             columns: [
-                { title: "" },
-                { title: "" },
-                { title: "" }
+                { title: "graha" },
+                { title: "lon" },
+                { title: "rasi" }
             ]
         } );
 
 		var data = array.sort(function(a,b){return parseFloat(a.start) - parseFloat(b.start);});
-		console.log(data);
         var current = '';
     	var d = {title: 'Dasha'};
     	var list = new Array();
