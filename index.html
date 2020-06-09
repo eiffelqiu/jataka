@@ -9,9 +9,10 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="src/css/kundli.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>  
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>    
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
     <script type="text/javascript" src="src/js/kundli.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
         crossorigin="anonymous">
@@ -22,24 +23,24 @@
 <body>
     <section>
         <h2>Rashi Graha:</h2>
-            <div class="tree-wrapper">
-                <div class="tree-example" >
-                     <table id="example1" class="display" width="100%"></table>   
-                </div>
+        <div class="tree-wrapper">
+            <div class="tree-example">
+                <table id="example1" class="display" width="100%"></table>
             </div>
+        </div>
     </section>
 
     <article class="disable_select">
-        <h1/>
+        <h1 />
         <canvas id="canvas_chart" tabindex="1" width="625" height="220">[ Rasi D1 and Navamsa D9 ]</canvas>
     </article>
-     
+
     <article class="disable_select">
-        
+
         <div class="grid-column">
             <div class="tree-wrapper">
-                <div class="tree-example" >
-                     <table id="example" class="display" width="100%"></table>   
+                <div class="tree-example">
+                    <table id="example" class="display" width="100%"></table>
                 </div>
             </div>
         </div>
@@ -53,10 +54,11 @@
     </article>
     <script>
         $(document).ready(function () {
-            $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function(datao) {   
+            $.getJSON('https://eiffelqiu.github.io/jataka/data.json', function (datao) {
                 draw_jataka(datao);
             });
         })
     </script>
 </body>
+
 </html>
