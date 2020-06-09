@@ -101,7 +101,7 @@ function draw_jataka(datao) {
 		for(a in datao['dasa']){
 		 array.push(datao['dasa'][a]);
 		}
-
+        console.log(array);
 		var infoarr = [];
 		infoarr.push(['Name',datao['info']['Name']]);
 		infoarr.push(['Place',datao['info']['Place']]);
@@ -151,7 +151,8 @@ function draw_jataka(datao) {
         } );
 
 		var data = array.sort(function(a,b){return parseFloat(a.start) - parseFloat(b.start);});
-		var current = '';
+		console.log(data);
+        var current = '';
     	var d = {title: 'Dasha'};
     	var list = new Array();
         $.each(data, function(i, item){
