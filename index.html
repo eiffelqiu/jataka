@@ -54,7 +54,8 @@
     </article>
     <script>
         $(document).ready(function () {
-            $.getJSON('http://127.0.0.1:8080/data.json', function (datao) {
+            // $.getJSON('http://127.0.0.1:8080/data.json', function (datao) {
+            $.getJSON('https://api.wrudoing.com/astrology/api/kundli?name=ccc&city=Chandia&year=1987&month=6&day=16&hour=10&min=5&lat=23.39&lon=80.42', function (datao) {
                 draw_jataka(datao);
             });
         })
