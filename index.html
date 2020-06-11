@@ -61,7 +61,7 @@
         $(document).ready(function () {
             $('#loading').show();
             $('#kundli').hide();
-            $.getJSON('https://api.wrudoing.com/astrology/api/kundli?name=ccc&city=Erode&year=2020&month=6&day=10&hour=15&min=5&lat=11.22&lon=77.44', function (datao) {
+            $.getJSON('https://api.wrudoing.com/astrology/api/kundli?name=ccc&city=Erode&year=2018&month=6&day=10&hour=10&min=5&lat=11.22&lon=77.44', function (datao) {
                 draw_jataka(datao);
                 $('#loading').hide();
                 $('#kundli').show();

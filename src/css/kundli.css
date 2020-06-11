@@ -171,7 +171,7 @@ section li a:hover {
 }
 
 article {
-    float: right;
+    float: left;
     width: 630px;
     text-align: left;
 }
