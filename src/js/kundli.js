@@ -234,7 +234,7 @@ function draw_d9_chart(canvas, zodiac, house, d) {
 
     canvas.textAlign = 'left';
     canvas.fillStyle = "#000000";
-    canvas.fillText("Rashi Chart", 2, 215);
+    canvas.fillText("Rasi Kundli", 2, 215);
 
     canvas.fillText(d, pos[0] + xoffset, 105);
     canvas.textAlign = 'left';

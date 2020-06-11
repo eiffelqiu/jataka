@@ -21,42 +21,50 @@
 </head>
 
 <body>
-    <section>
-        <h2>Rashi Graha:</h2>
-        <div class="tree-wrapper">
-            <div class="tree-example">
-                <table id="example1" class="display" width="100%"></table>
-            </div>
-        </div>
-    </section>
-
-    <article class="disable_select">
-        <h1 />
-        <canvas id="canvas_chart" tabindex="1" width="625" height="220">[ Rasi D1 and Navamsa D9 ]</canvas>
-    </article>
-
-    <article class="disable_select">
-
-        <div class="grid-column">
+    <header id="loading">
+        <h1> Generating Kundli... </h1>
+    </header>
+    <div id="kundli">
+        <section id="setction1">
+            <h2>Rasi Info</h2>
             <div class="tree-wrapper">
                 <div class="tree-example">
-                    <table id="example" class="display" width="100%"></table>
+                    <table id="example1" class="display" width="100%"></table>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="grid-column">
-            <div class="tree-wrapper">
-                <div class="tree-example" id="tree-example-3"></div>
+        <article class="disable_select" id="setction2">
+            <h1 />
+            <canvas id="canvas_chart" tabindex="1" width="625" height="220">[ Kundli/Rashi and Navamsa D9 ]</canvas>
+        </article>
+
+        <article class="disable_select" id="setction3">
+            <div class="grid-column">
+                <div class="tree-wrapper">
+                    <div class="tree-example">
+                        <table id="example" class="display" width="100%"></table>
+                    </div>
+                </div>
             </div>
-        </div>
 
-    </article>
+            <div class="grid-column">
+                <br/>
+                <div class="tree-wrapper">
+                    <div class="tree-example" id="tree-example-3"></div>
+                </div>
+            </div>
+
+        </article>
+    </div>
     <script>
         $(document).ready(function () {
-            // $.getJSON('http://127.0.0.1:8080/data.json', function (datao) {
+            $('#loading').show();
+            $('#kundli').hide();
             $.getJSON('https://api.wrudoing.com/astrology/api/kundli?name=ccc&city=Erode&year=2020&month=6&day=10&hour=15&min=5&lat=11.22&lon=77.44', function (datao) {
                 draw_jataka(datao);
+                $('#loading').hide();
+                $('#kundli').show();
             });
         })
     </script>
