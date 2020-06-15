@@ -177,11 +177,28 @@ function draw_jataka(datao) {
 
     });
     d['nodes'] = list;
-    var tree = new TreeDataView({
-        append: $('#tree-example-3'),
-        openLevel: 2,
-    }, d);
-    tree.render();
+    // var tree = new TreeDataView({
+    //     append: $('#tree-example-3'),
+    //     openLevel: 2,
+    // }, d);
+    // tree.render();
+
+    $('#tree-example-3').jstree({ 'core' : {
+    'data' : [
+       'Simple root node',
+       {
+         'text' : 'Root node 2',
+         'state' : {
+           'opened' : true,
+           'selected' : true
+         },
+         'children' : [
+           { 'text' : 'Child 1' },
+           'Child 2'
+         ]
+      }
+    ]
+} });
 }
 
 function draw_d9_chart(canvas, zodiac, house, d) {
